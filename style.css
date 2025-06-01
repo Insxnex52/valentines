@@ -1,0 +1,229 @@
+body{
+    background-color: pink;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button button{
+    background-color: lightpink;
+    font-size: 18px;
+    position: absolute;
+    top: 110%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 2px 2px black;
+    animation: fadeIn 2s ease-in-out forwards;
+    animation-delay: 17.5s;
+    opacity: 0;
+    cursor: pointer;
+    }
+
+ .somplak p {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 15px;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+.somplak p:nth-child(1) {
+      font-family: 'Courier New', Courier, monospace;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 5px solid black; /* Cursor effect */
+      width: 17ch; /* Adjust to control the visible text length */
+      animation: type 2s steps(17, end), blink 2s step-end infinite;
+    }
+
+    .somplak p:nth-child(2) {
+      font-family: 'Courier New', Courier, monospace;
+      white-space: nowrap;
+      overflow: hidden;
+      opacity: 0;
+      border-right: 5px solid black; /* Cursor effect */
+      width: 18ch; /* Adjust to control the visible text length */
+      -webkit-animation: type2 5s steps(18, end), blink .5s step-end infinite alternate;
+      animation: type2 2s steps(18, end), blink 2s step-end infinite;
+       -webkit-animation-fill-mode: forwards;
+    -webkit-animation-delay: 4s;
+      animation-delay: 3s;
+      animation-fill-mode: forwards;
+    }
+
+    .somplak p:nth-child(3) {
+      font-family: 'Courier New', Courier, monospace;
+      white-space: nowrap;
+      overflow: hidden;
+      opacity: 0;
+      border-right: 5px solid black; /* Cursor effect */
+      width: 32.5ch; /* Adjust to control the visible text length */
+      -webkit-animation: type3 5s steps(17, end), blink .5s step-end infinite alternate;
+      animation: type3 2s steps(17, end), blink 2s step-end infinite;
+      -webkit-animation-fill-mode: forwards;
+    -webkit-animation-delay: 4s;
+      animation-delay: 6s;
+       animation-fill-mode: forwards;
+    }
+
+      .somplak p:nth-child(4) {
+      font-family: 'Courier New', Courier, monospace;
+      white-space: nowrap;
+      overflow: hidden;
+      opacity: 0;
+      border-right: 5px solid black; /* Cursor effect */
+      width: 32.5ch; /* Adjust to control the visible text length */
+      -webkit-animation: type3 5s steps(17, end), blink .5s step-end infinite alternate;
+      animation: type3 2s steps(17, end), blink 2s step-end infinite;
+      -webkit-animation-fill-mode: forwards;
+    -webkit-animation-delay: 4s;
+      animation-delay: 9s;
+       animation-fill-mode: forwards;
+    }
+
+      .somplak p:nth-child(5) {
+      font-family: 'Courier New', Courier, monospace;
+      white-space: nowrap;
+      overflow: hidden;
+      opacity: 0;
+      border-right: 5px solid black; /* Cursor effect */
+      width: 32.5ch; /* Adjust to control the visible text length */
+      -webkit-animation: type3 5s steps(17, end), blink .5s step-end infinite alternate;
+      animation: type3 2s steps(17, end), blink 2s step-end infinite;
+      -webkit-animation-fill-mode: forwards;
+    -webkit-animation-delay: 4s;
+      animation-delay: 11s;
+       animation-fill-mode: forwards;
+    }
+
+    .somplak p:nth-child(6) {
+      font-family: 'Courier New', Courier, monospace;
+      white-space: nowrap;
+      overflow: hidden;
+      opacity: 0;
+      border-right: 5px solid black; /* Cursor effect */
+      width: 32.5ch; /* Adjust to control the visible text length */
+      -webkit-animation: type3 5s steps(17, end), blink .5s step-end infinite alternate;
+      animation: type3 2s steps(17, end), blink 2s step-end infinite;
+      -webkit-animation-fill-mode: forwards;
+    -webkit-animation-delay: 4s;
+      animation-delay: 13s;
+       animation-fill-mode: forwards;
+    }
+
+    .somplak p:nth-child(7) {
+      font-family: 'Courier New', Courier, monospace;
+      white-space: nowrap;
+      overflow: hidden;
+      opacity: 0;
+      border-right: 5px solid black; /* Cursor effect */
+      width: 32.5ch; /* Adjust to control the visible text length */
+      -webkit-animation: type3 5s steps(17, end), blink .5s step-end infinite alternate;
+      animation: type3 2s steps(17, end), blink 2s step-end infinite;
+      -webkit-animation-fill-mode: forwards;
+    -webkit-animation-delay: 4s;
+      animation-delay: 15s;
+       animation-fill-mode: forwards;
+    }
+
+    .somplak p:nth-child(8) {
+      font-family: 'Courier New', Courier, monospace;
+      white-space: nowrap;
+      overflow: hidden;
+      opacity: 0;
+      border-right: 5px solid black; /* Cursor effect */
+      width: 32.5ch; /* Adjust to control the visible text length */
+      -webkit-animation: type3 5s steps(17, end), blink .5s step-end infinite alternate;
+      animation: type3 2s steps(17, end), blink 2s step-end infinite;
+      -webkit-animation-fill-mode: forwards;
+    -webkit-animation-delay: 4s;
+      animation-delay: 16.5s;
+       animation-fill-mode: forwards;
+    }
+
+    /* Typing effect */
+    @keyframes type {
+      from {
+        width: 0;
+      }
+      to {
+        width: 17ch;
+      }
+    }
+
+    /* Blinking cursor effect */
+    @keyframes blink {
+      from {
+        border-color: transparent;
+      }
+      to {
+        border-color: black;
+      }
+    }
+
+    @keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+   from{
+    opacity: 0;
+   }
+   to{
+    opacity: 1;
+   }
+}
